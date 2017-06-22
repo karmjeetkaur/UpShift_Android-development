@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="3dip"
+    android:popupBackground="#ffffff"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:popupBackground="#ffffff"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar"
+            />
+
+        <TextView
+            android:textColor="#992c2c2c"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/time_range"
+            android:text="CoderzHeaven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:autoText="false" />
+
+    </LinearLayout>
+</RelativeLayout>

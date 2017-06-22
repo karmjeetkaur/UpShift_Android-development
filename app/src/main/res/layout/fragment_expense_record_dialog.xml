@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#407bdb">
+
+    <!--this layout is for the form elements for db entry input process-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <!--input for platform: uber lyft etc-->
+
+        <!--input for date of revenue: defaults to current date when touched. should probably be changed to automatically inpout the current date without a need for user input-->
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/exp_top_row">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/cat_col"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Category:"
+                    android:id="@+id/textView5"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_alignBaseline="@+id/etxt_date"
+                    android:layout_alignBottom="@+id/etxt_date"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expCategoryGroup"
+                    android:layout_marginTop="0dp">
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gas"
+                        android:id="@+id/radio_gas"
+                        android:layout_above="@+id/etxt_exp_date"
+                        android:checked="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="0dp"
+                        android:onClick="RadioButtonClicked"
+                        android:layout_marginTop="0dp" />
+
+                    <RadioButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Maintenance"
+                        android:id="@+id/radio_miantenance"
+                        android:layout_above="@+id/etxt_exp_date"
+                        android:checked="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:onClick="RadioButtonClicked" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food"
+                        android:id="@+id/radio_food"
+                        android:checked="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_below="@+id/linearLayout5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="0dp"
+                        android:onClick="RadioButtonClicked" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/radio_other"
+                        android:checked="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_below="@+id/linearLayout5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="RadioButtonClicked"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amt_desc_reset_row"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/etxt_exp_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxt_exp_date"
+                    android:hint="Amount"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/etxt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:singleLine="false"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_alignBottom="@+id/linearLayout6"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    android:textColor="#407bdb"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxt_category"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:hint="Category"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:id="@+id/etxt_exp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"
+            android:nextFocusDown="@+id/etxt_exp_amt"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

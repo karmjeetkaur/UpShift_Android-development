@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "845108825065",
+    "firebase_url": "https://upshift-db2cf.firebaseio.com",
+    "project_id": "upshift-db2cf",
+    "storage_bucket": "upshift-db2cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845108825065:android:32978ca4bec6e990",
+        "android_client_info": {
+          "package_name": "com.upshiftapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845108825065-6jlqi8amjsg6mfi0eh51u3g6kr4158dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCftaD8f1awnHe519jKt9c6bHhiWmLFlK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845108825065-6jlqi8amjsg6mfi0eh51u3g6kr4158dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

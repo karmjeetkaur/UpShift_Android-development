@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--provides the settings button in the top menu bar-->
+    <item
+        android:id="@+id/settings_button"
+        android:icon="@drawable/settings_cog_icon"
+        android:title="Settings"
+        android:showAsAction="always"/>
+
+    <!--<item-->
+        <!--android:id="@+id/deadhead_db_button"-->
+        <!--android:icon="@drawable/settings_cog_icon"-->
+        <!--android:title="Deadhead DB"-->
+        <!--android:showAsAction="never"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/expenses_db_button"-->
+        <!--android:icon="@drawable/settings_cog_icon"-->
+        <!--android:title="Expenses DB"-->
+        <!--android:showAsAction="never"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/rev_db_button"-->
+        <!--android:icon="@drawable/settings_cog_icon"-->
+        <!--android:title="Revenue DB"-->
+        <!--android:showAsAction="never"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/shift_db_button"-->
+        <!--android:icon="@drawable/settings_cog_icon"-->
+        <!--android:title="Shifts DB"-->
+        <!--android:showAsAction="never"/>-->
+
+</menu>

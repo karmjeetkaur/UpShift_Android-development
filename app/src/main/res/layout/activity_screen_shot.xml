@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_vehicle"
+    android:layout_width="match_parent"
+    android:background="#F6F6F6"
+    android:layout_height="match_parent"
+    tools:context="com.upshft.upshiftapp.signup.ChooseVehicle">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Document Of Register"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:background="@color/view_divider_color"
+        android:layout_height="1dp"/>
+
+
+    <Button
+        android:layout_below="@+id/view"
+        android:id="@+id/btn_take_pic"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_back"
+        android:text="Take Photo"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleView"
+        android:layout_below="@+id/btn_take_pic"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

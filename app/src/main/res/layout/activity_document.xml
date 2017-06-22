@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_vehicle"
+    android:layout_width="match_parent"
+    android:background="#F6F6F6"
+    android:layout_height="match_parent"
+    tools:context="com.upshft.upshiftapp.signup.ChooseVehicle">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleView"
+        android:layout_above="@+id/txt_upgrade"
+        android:background="@drawable/edit_text_back"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/txt_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:text="Upgrade and add more Storage"
+        android:background="@drawable/ui_button_blue"/>
+
+</RelativeLayout>

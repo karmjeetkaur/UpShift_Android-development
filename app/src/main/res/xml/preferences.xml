@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Personal Info">
+
+        <grid.IconPreferenceScreen
+            android:key="update_data"
+            android:summary="Edit Your Personal Information"
+            android:title="User Information" />
+
+        <grid.IconPreferenceScreen
+            android:key="account_details"
+            android:summary="Account Deatils"
+            android:title="Account"/>
+
+        <grid.IconPreferenceScreen
+            android:key="choose_vehicle"
+            android:summary="View Data"
+            android:title="Earnings Data" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_widget_appearance">
+
+        <PreferenceScreen
+            android:key="main"
+            android:summary="Add/Remove widget icons"
+            android:title="Choose Widget Icons">
+
+            <PreferenceCategory
+                android:key="pref_main_rideshare"
+                android:title="Rideshare Apps">
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_uberpartner_checkbox"
+                    android:summary="Drive with Uber"
+                    android:title="Uber Partner" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_uberrider_checkbox"
+                    android:summary="Some of our users use the Uber rider app to be aware of where other uber drivers are located"
+                    android:title="Uber Rider" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_lyft_checkbox"
+                    android:summary="Drive with Lyft"
+                    android:title="Lyft" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_doordash_checkbox"
+                    android:summary="Drive with DoorDash"
+                    android:title="DoorDash" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_postmates_checkbox"
+                    android:summary="Drive with Postmates"
+                    android:title="Postmates" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_curb_checkbox"
+                    android:summary="On-The-Way Delivery"
+                    android:title="Roadie" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_wingz_checkbox"
+                    android:summary="Driving with Gett means no commitment, no base fees and no deposit."
+                    android:title="Gett Drivers" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_square_checkbox"
+                    android:button="@drawable/checkbox_slecter"
+                    android:summary="Collect tips and fees with Square"
+                    android:title="Square" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_creditcardreader_checkbox"
+                    android:button="@drawable/checkbox_slecter"
+                    android:summary="Collect tips and fees with Credit Card Reader"
+                    android:title="Credit Card Reader"/>
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_grab_checkbox"
+                    android:button="@drawable/checkbox_slecter"
+                    android:summary="Get a safe and reliable ride in minutes with Grab "
+                    android:title="Grab" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_amazon_checkbox"
+                    android:summary="THE RIDESHARE GUY lists Rideshare Timer as one of the 12 Must-Have Apps For Rideshare Drivers"
+                    android:title="Rideshare" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_uzurv_checkbox"
+                    android:summary="UZURV is a Reservation Service App designed to enhance your on-demand ride sharing experience"
+                    android:title="Uzurv" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_fare_checkbox"
+                    android:summary="FARE is your personal ride alternative when you need to get where you’re going"
+                    android:title="Fare" />
+
+            </PreferenceCategory>
+
+            <!--<PreferenceCategory android:title="Driver Assistance"></PreferenceCategory>-->
+            <!--<PreferenceCategory android:title="Music"></PreferenceCategory>-->
+
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_autostart_checkbox"
+            android:button="@drawable/checkbox_slecter"
+            android:summary="@string/pref_autostart_widget_summary"
+            android:title="@string/pref_autostart_widget" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/pref_widget_view_list_title"
+            android:entries="@array/pref_widget_startup_side_entries"
+            android:entryValues="@array/pref_widget_startup_side_values"
+            android:key="pref_widget_startup_appearance"
+            android:summary="@string/pref_widget_settings_summary"
+            android:title="@string/pref_widget_startup_settings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_cat_geo_settings">
+
+        <ListPreference
+            android:defaultValue="2"
+            android:dialogTitle="@string/pref_geo_interval_list_title"
+            android:entries="@array/pref_geo_interval_entries"
+            android:entryValues="@array/pref_geo_interval_values"
+            android:key="pref_geo_interval"
+            android:summary="@string/pref_geo_interval_summary"
+            android:title="@string/pref_geo_interval" />
+        <ListPreference
+            android:defaultValue="2"
+            android:dialogTitle="@string/pref_geo_accuracy_list_title"
+            android:entries="@array/pref_geo_accuracy_entries"
+            android:entryValues="@array/pref_geo_accuracy_values"
+            android:key="pref_geo_accuracy_priority"
+            android:summary="@string/pref_geo_accuracy_summary"
+            android:title="@string/pref_geo_accuracy" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Administration">
+
+        <grid.IconPreferenceScreen
+            android:key="SIGN_IN_EMAIL"
+            android:summary=""
+            android:title="Signed-In User" />
+
+        <grid.IconPreferenceScreen
+            android:key="pref_action_revoke_access"
+            android:summary="Unregister this app with this device deleting and resetting ALL user data and settings"
+            android:title="Revoke Access" />
+
+        <grid.IconPreferenceScreen
+            android:key="referral"
+            android:summary="ADD a Referral system using google firebase"
+            android:title="Referral" />
+
+        <grid.IconPreferenceScreen
+            android:key="coupons"
+            android:summary="this is just a list of car, driver, small business owner related coupons."
+            android:title="Coupons" />
+
+
+    </PreferenceCategory>
+
+    <grid.IconPreferenceScreen
+        android:key="document_data"
+        android:summary="Documents section"
+        android:title="Choose Documents" />
+
+    <grid.IconPreferenceScreen
+        android:key="close_upshift"
+        android:title="CLOSE UPSHIFT" />
+
+</PreferenceScreen>

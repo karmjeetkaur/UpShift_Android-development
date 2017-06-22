@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#c1ffffff</color>
+    <color name="colorAccent">#407bdb</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_bg">#ffffff</color>
+    <color name="view_divider_color">#878484</color>
+    <color name="colorDark">#34495e</color>
+    <color name="black">#000</color>
+    <color name="yellow_txt">#c78b17</color>
+    <color name="black_overlay">#33000000</color>
+    <color name="hint_color">#FEA700</color>
+
+    <color name="dark_blue">#405266</color>
+    <color name="green">#3db14f</color>
+    <color name="light_text_color">#f9f9f9</color>
+
+    <color name="text_color_light">#CDCDCD</color>
+    <color name="light_orange">#bf7a44</color>
+
+</resources>

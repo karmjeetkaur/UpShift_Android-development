@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">UpShift</string>
+    <string name="add_rev">Add Revenue</string>
+    <string name="update_rev">Update Revenue</string>
+    <string name="platform">Platform</string>
+    <string name="date">Date</string>
+    <string name="amt">Amount</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_exp">Add Expense</string>
+    <string name="update_exp">Update Expense</string>
+    <string name="login_btn">Start Using UpShift</string>
+    <string name="howto1">1/6</string>
+    <string name="howto2">2/6</string>
+    <string name="howto3">3/6</string>
+    <string name="howto4">4/6</string>
+    <string name="howto5">5/6</string>
+    <string name="howto6">6/6</string>
+    <string name="facebook_app_id">415398812169606</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-9290830592889474/6468103349</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Widget settings -->
+    <string name="pref_cat_widget_appearance">Floating Widget</string>
+
+    <string name="pref_icons_selection">Add/Remove Icons</string>
+    <string name="pref_icons_selection_summary">Choose which shortcuts are in your floating widget.</string>
+    <string name="pref_widget_icons_list_title">Choose Your Apps</string>
+    <string-array name="pref_widget_icons">
+        <item>Uber Partner</item>
+        <item>Uber Rider</item>
+        <item>Lyft</item>
+        <item>Curb</item>
+        <item>Grab</item>
+        <item>OrderUp Amazon Flex</item>
+        <item>Uzurv</item>
+        <item>Fare</item>
+        <item>DoorDash</item>
+        <item>OrderUp</item>
+        <item>Waze</item>
+        <item>Google Maps</item>
+        <item>Spotify</item>
+        <item>Pandora</item>
+        <item>Square</item>
+    </string-array>
+
+    <string-array name="pref_widget_icons_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="pref_autostart_widget">Show Widget on Startup</string>
+    <string name="pref_autostart_widget_summary">Choose whether floating widget starts on app start</string>
+
+    <string name="pref_widget_startup_settings">Widget Location on Startup</string>
+    <string name="pref_widget_settings_summary">Choose widget startup location</string>
+    <string-array name="pref_widget_startup_side_entries">
+        <item>Appear on Left</item>
+        <item>Appear on Right</item>
+    </string-array>
+    <string-array name="pref_widget_startup_side_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="pref_widget_view_list_title">Choose Location</string>
+
+    <!-- Geo settings -->
+    <string name="pref_cat_geo_settings">Geolocation</string>
+
+    <string name="pref_geo_interval">Set Interval</string>
+    <string name="pref_geo_interval_summary">Accuracy determined by the time interval between geolocation updates</string>
+    <string-array name="pref_geo_interval_entries">
+        <item>More Accurate</item>
+        <item>Recommended (Default)</item>
+        <item>Less Accurate</item>
+    </string-array>
+    <string-array name="pref_geo_interval_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="pref_geo_interval_list_title">Choose Interval</string>
+
+    /////////
+    <string name="pref_geo_accuracy">Accuracy Priority</string>
+    <string name="pref_geo_accuracy_summary">Higher accuracy of geolocation is more demanding on device resources</string>
+    <string-array name="pref_geo_accuracy_entries">
+        <item>Low</item>
+        <item>Balanced</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="pref_geo_accuracy_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="pref_geo_accuracy_list_title">Select Accuracy</string>
+
+    ////////
+    <string name="pref_cat_db_settings">Database Options</string>
+
+    <string name="pref_db_rev_delete">Revenue</string>
+    <string name="pref_db_rev_delete_summary">Clear all rows from current revenue log</string>
+
+    <string name="pref_db_exp_delete">Expenses</string>
+    <string name="pref_db_exp_delete_summary">Clear all rows from current expenses log</string>
+
+    <string name="pref_db_print_report">Print Report</string>
+    <string name="pref_db_print_report_summary">Send a report of revenue and expenses to the network printer</string>
+    <string name="mith">Mith</string>
+    <string name="uber">uber</string>
+    <string name="lyft">Lyft</string>
+    <string name="doordash">Doordash</string>
+    <string name="orderup">OrderUp</string>
+    <string name="amazonflex">AmazonFlex</string>
+    <string name="squarereader">SquareReader</string>
+    <string name="creditcardreader">CreditCardReader</string>
+    <string name="waze">Waze</string>
+    <string name="GoogleMap">GoogleMap</string>
+    <string name="Pandora">Pandora</string>
+
+    <string name="action_deep_link">
+        com.google.android.gms.samples.appinvite.DEEP_LINK_ACTION
+    </string>
+
+    <string name="invite">Send invitations!</string>
+    <string name="welcome">Invites</string>
+    <string name="referrer_hint">Deep link not provided</string>
+    <string name="deep_link_default">Deep link not set</string>
+    <string name="invitation_id_default">Invitation ID not set</string>
+    <string name="invite_friends">Invite Friends</string>
+
+    <string name="invitation_title">Send App Invite Quickstart Invitation</string>
+    <string name="invitation_message">Dashboard</string>
+    <string name="invitation_deep_link" formatted="false">https://play.google.com/store/apps/details?id=com.upshft.upshiftprime</string>
+    <string name="invitation_custom_image">https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png</string>
+    <string name="invitation_cta">Install!</string>
+
+    <string name="deep_link_fmt" formatted="false">Deep Link: %s</string>
+    <string name="invitation_id_fmt" formatted="false">Invitation ID: %s</string>
+
+    <string name="sent_invitations_fmt" formatted="false">Sent %d invitations</string>
+    <string name="send_failed">Sending invitations failed</string>
+    <string name="invite_dialog_title">You got an invitation!</string>
+
+    <string name="google_play_services_error">Google Play Services Error</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="subscription_period_prompt">Select your subscription period</string>
+    <string name="subscription_resignup_prompt">To reactivate your subscription, select your subscription period</string>
+    <string name="subscription_update_prompt">To change your subscription, select your new subscription period</string>
+    <string name="subscription_period_monthly">Monthly</string>
+    <string name="subscription_period_yearly">Yearly</string>
+    <string name="subscription_prompt_continue">Continue</string>
+    <string name="subscription_prompt_cancel">Cancel</string>
+    <string name="content_description_app_loading_image">App loading image</string>
+    <string name="content_description_title_image">80\'s Video Game Style Car Logo</string>
+    <string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+
+    <string name="icon_default">ic_green</string>
+
+    <string name="custom_icon_key">customIconKey</string>
+    <string name="icon_label">Icon</string>
+
+    <string name="default_summary">Select an icon</string>
+
+    <string-array name="iconName">
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="iconFile">
+        <item>ic_green</item>
+        <item>ic_yellow</item>
+        <item>ic_red</item>
+    </string-array>
+
+</resources>
